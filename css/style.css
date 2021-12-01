@@ -9,6 +9,10 @@ a {
     text-decoration: none;
 }
 
+ul {
+    list-style: none;
+}
+
 body {
     color: #232222;
     font-size: 16px;
@@ -27,7 +31,7 @@ body {
 .header__top {
     display: flex;
     justify-content: space-between;
-    padding-top: 27px;
+    padding-top: 20px;
 }
 
 .logo {
@@ -58,6 +62,7 @@ body {
     line-height: 21px;
     font-weight: 500;
     transition: all .5s;
+    border-bottom: 1px solid transparent    ;
 }
 
 .menu__link:hover {
@@ -66,4 +71,115 @@ body {
 
 .header__content {
     background-image: url('../images/header-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    padding-bottom: 20px;
+    margin-top: -100px;
+}
+
+.title {
+    font-family: 'Roboto Slab', serif;
+    font-size: 72px;
+    line-height: 95px;
+    font-weight: 700;
+    color: #001E64;
+    max-width: 589px;
+    padding-top: 170px;
+    padding-left: 112px;
+    margin-bottom: 60px;
+}
+
+.header-slider {
+    max-width: 522px;
+    padding: 57px 0 135px 112px;
+}
+
+.header-slider__text {
+    margin-bottom: 25px;
+    font-size: 18px;
+    line-height: 22px;
+    color: #fff;
+}
+
+.header-slider .slick-dots {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+}
+
+.header-slider .slick-dots {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+}
+
+.header-slider .slick-dots button{
+    background-color: transparent;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    line-height: 28px;
+    color: #fff;
+    opacity: .5;
+    margin: 20px 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.header-slider .slick-dots button::before{
+    content: '0';
+}
+
+.header-slider .slick-dots li:nth-child(n + 10) button::before{
+    content: '';
+}
+
+.header-slider .slick-dots .slick-active button{
+    opacity: 1;
+}
+
+.header-slider .slick-arrow {
+    position: absolute;
+    left: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.header-slider .slick-prev {
+    top: 0;
+}
+
+.header-slider .slick-next {
+    bottom: 0;
+}
+
+.header__content-btn {
+    display: inline-block;
+    position: absolute;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    color: #fff;
+    font-size: 23px;
+    line-height: 32px;
+    padding: 14px 88px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, .5);
+    margin-left: 112px;
+    transform: translateY(-100px);
+}
+
+.header__content-box {
+    display: flex;
+    margin-left: 100%;
+    margin-right: 30px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.header__content-link--active {
+    font-weight: 700;
 }
